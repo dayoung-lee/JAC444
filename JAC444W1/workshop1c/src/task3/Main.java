@@ -1,5 +1,5 @@
 // JAC444 Workshop1
-//  Name: Dayoung Lee     Student ID: 121693162      Date: 1/10/2019
+//  Name: Dayoung Lee     Student ID: 121693162      Date: 1/10/2018
 
 package task3;
 
@@ -93,9 +93,10 @@ public class Main {
 					break;
 
 				}// switch
-				if (choice == 4) {
+				if (choice == 4) {					
 					System.out.println();
-					break;
+					System.out.println("--End of the program--");
+					System.exit(0);
 				}
 			}
 
