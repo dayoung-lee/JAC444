@@ -1,0 +1,24 @@
+Account Id: 1122
+Current Balance: $20500.0
+Monthly Interest: 76.875
+Date Created: Thu Sep 26 17:32:01 EDT 2019
+
+Testing Checking Account
+Your overDraft limit : 5000.0
+
+You want to withdraw : $26000.0
+overdraft limit hit
+
+Account Id: 1
+Current Balance: $20000.0
+Monthly Interest: 75.0
+Date Created: Thu Sep 26 17:32:01 EDT 2019
+
+Testing Savings Account
+Your current balance : 20000.0
+You want to waithdraw : 19000.0
+
+Account Id: 2
+Current Balance: $1000.0
+Monthly Interest: 3.75
+Date Created: Thu Sep 26 17:32:01 EDT 2019
