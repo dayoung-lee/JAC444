@@ -1,0 +1,56 @@
+-----Conversion Program-----
+
+1.Meter-Yard  2.Celsius-Fahrenheit 3.Found-Kg 4.Exit
+Select: 1
+------------------------
+1. Meter to Yard
+2. Yard to Meter
+3. Back to main menu
+Choose number: 1
+Meter: 23
+Result: 23.0 meter to 25.162000000000003 yard.
+
+------------------------
+1. Meter to Yard
+2. Yard to Meter
+3. Back to main menu
+Choose number: 2
+Yard: 21
+Result: 21.0 yard to 19.19561243144424 meter.
+
+------------------------
+1. Meter to Yard
+2. Yard to Meter
+3. Back to main menu
+Choose number: 3
+-----Conversion Program-----
+
+1.Meter-Yard  2.Celsius-Fahrenheit 3.Found-Kg 4.Exit
+Select: 3
+------------------------
+1. Found to Kg
+2. Kg to Found
+3. Back to main menu
+Choose number: 1
+Found: 23
+Result: 23.0 found to 10.430839002267573 kg.
+
+------------------------
+1. Found to Kg
+2. Kg to Found
+3. Back to main menu
+Choose number: 2
+Kg: 34
+Result: 34.0 kg to 74.97 found.
+
+------------------------
+1. Found to Kg
+2. Kg to Found
+3. Back to main menu
+Choose number: 3
+-----Conversion Program-----
+
+1.Meter-Yard  2.Celsius-Fahrenheit 3.Found-Kg 4.Exit
+Select: 4
+
+--The program has ended--
