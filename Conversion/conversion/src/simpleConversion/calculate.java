@@ -43,14 +43,14 @@ public class calculate {
 			int menu = sc.nextInt();
 			switch (menu) {
 			case 1:
-				System.out.print("Found: ");
+				System.out.print("Found(lb): ");
 				double found = sc.nextDouble();
-				System.out.println("Result: " + found + " found to " + (found/2.205) + " kg.\n");
+				System.out.println("Result: " + found + " found(lb) to " + (found/2.205) + " kg.\n");
 				break;
 			case 2:
 				System.out.print("Kg: ");
 				double kg = sc.nextDouble();
-				System.out.println("Result: " + kg + " kg to " + (kg*2.205)+ " found.\n");
+				System.out.println("Result: " + kg + " kg to " + (kg*2.205)+ " found(lb).\n");
 				break;
 			case 3:
 				run1 =false;
