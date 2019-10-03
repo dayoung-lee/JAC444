@@ -1,0 +1,74 @@
+Student Information
+
+3 students are in the list.
+-------------------------------------
+1.Add|2.Search|3.List|4.Modify|5.Exit
+-------------------------------------
+Selecet: 1
+
+Name: Dayoung Kim
+Student's number: 123456
+No.0 Dayoung Lee 1693162
+No.1 Nayoung Kim 13293162
+No.2 John Doe 1223162
+No.3 Dayoung Kim 123456
+
+'Dayoung Kim' is added.
+
+-------------------------------------
+1.Add|2.Search|3.List|4.Modify|5.Exit
+-------------------------------------
+Selecet: 2
+Type student's name: Dayoung Lee
+Dayoung Lee's student no: 1693162
+Search (y) Back to menu (n) y
+Type student's name: John Kim
+Can't find John Kim student.
+Search (y) Back to menu (n) n
+
+-------------------------------------
+1.Add|2.Search|3.List|4.Modify|5.Exit
+-------------------------------------
+Selecet: 3
+
+Student's List: 
+No.0 Dayoung Lee 1693162
+No.1 Nayoung Kim 13293162
+No.2 John Doe 1223162
+No.3 Dayoung Kim 123456
+-------------------------------------
+1.Add|2.Search|3.List|4.Modify|5.Exit
+-------------------------------------
+Selecet: 4
+-------------------------
+No.0 Dayoung Lee 1693162
+No.1 Nayoung Kim 13293162
+No.2 John Doe 1223162
+No.3 Dayoung Kim 123456
+-------------------------
+Please type index number: 0
+
+No.0
+Name: Dayoung Lee
+Student number: 1693162
+
+Please write name and student's number again.
+name: Dayoung Park
+number: 154848
+`Dayoung Park's information has changed.
+-------------------------------------
+1.Add|2.Search|3.List|4.Modify|5.Exit
+-------------------------------------
+Selecet: 3
+
+Student's List: 
+No.0 Dayoung Park 154848
+No.1 Nayoung Kim 13293162
+No.2 John Doe 1223162
+No.3 Dayoung Kim 123456
+-------------------------------------
+1.Add|2.Search|3.List|4.Modify|5.Exit
+-------------------------------------
+Selecet: 5
+--End of the program--
+
