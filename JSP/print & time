@@ -1,0 +1,51 @@
+<%@ page language = "java" contentType = "text/html; charset = UTF-8" pageEncoding = "UTF-8" %>
+<%@ page import = "java.util.Date" %>
+<%@ page import = "java.text.SimpleDateFormat" %>
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv = "Content-Type" content = "text/html; charset=UTF-8">	
+	<!-- Bootstrap CSS -->
+	<link rel = "stylesheet" href = "/css/bootstra.min.css">
+	<title> Hello JSP </title>
+</head>
+
+<body>
+	<div class = "jumbotron">
+	<h1> Hello World! </h1>
+	
+	<!-- for loop -->
+	<% for (int i = 0; i < 3; i++){ %>
+	<p>hello.jsp</p>
+	<% } %>
+	</div>
+	
+	<div class = "timezone">
+	<%	Date date = new Date();
+		SimpleDateFormat sf = new SimpleDateFormat("yyyy.MM.dd G 'at' HH:mm:ss z"); %>	 
+	Time : <%= date.toString() %> <a></a><br>====================================<br>
+	Time(format) : <%= sf.format(date) %>
+	</div>
+	
+	<!--  Optional JavaScript -->
+	<!--  JQuery first, then Popper.js, then Bootstrap JS -->
+	<Script type = "text/javascript" src ="/js/jquery-3.4.1.js"></Script>
+	<Script type = "text/javascript" src ="/js/bootstrap.min.js"></Script>
+	<Script type = "text/javascript" src ="/js/popper.min.js"></Script>
+	</body>
+</html>
+
+<!--output--!>
+
+Hello World! 
+ 
+hello.jsp
+
+hello.jsp
+
+hello.jsp
+
+Time : Sat Oct 05 17:06:25 EDT 2019 
+====================================
+Time(format) : 2019.10.05 AD at 17:06:25 EDT 
