@@ -1,0 +1,110 @@
+index.jsp
+----------
+<%@ page language="java" contentType="text/html; charset = UTF-8"
+	pageEncoding="UTF-8"%>
+<%!class Cake {
+		Integer no;
+		Integer qt;
+		String name;
+
+		public Cake(Integer no, Integer qt, String name) {
+			this.no = no;
+			this.qt = qt;
+			this.name = name;
+		}
+	}%>
+<%!int[] numbers = { 1, 2, 3, 4, 5, 6 };
+	int[] qty = { 12, 3, 2, 0, 1, 5 };
+	String[] name = { "Butter cake", "Pound cake", "Sponge cake", "Biscuit cake", "Angel food cake", "Chiffon cake" };%>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<!-- Bootstrap CSS, custom CSS -->
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/custom.css">
+<title>CAKE LIST</title>
+</head>
+
+<body>
+	<div class="container">
+		<div class="align-middle">
+			<h1>Cake List</h1>
+		</div>
+		<!-- Search Form -->
+		<form align="right" style="margin-right: 10px; margin-bottom: 20px;"
+			action="search.jsp" method="get">
+			<td><input type="txt" name="keyword"></td>
+			<td><input type="submit" value="search"></td>
+		</form>
+
+
+		<!-- table -->
+		<table class="cake-table">
+			<colgroup>
+				<col width="10%" />
+				<col width="20%" />
+				<col width="*" />
+			</colgroup>
+			<!-- table head -->
+			<thead>
+				<tr>
+					<th>No</th>
+					<th>Quantity</th>
+					<th>Name</th>
+				</tr>
+			</thead>
+			<!-- table foot -->
+			<tfoot align = "right">
+				<td colspan="3">
+					<div class="links">
+						<a href="#">1</a> 
+						<a href="#">2</a> 
+						<a href="#">3</a> 
+						<a href="#">4</a>
+					</div>
+				</td>
+			</tfoot>
+
+			<!-- table body -->
+			<!-- for loop -->
+			<%
+				for (int i = 0; i < numbers.length; i++) {
+			%>
+			<tbody>
+				<tr>
+					<td><b><%=numbers[i]%></td>
+					<td><%=qty[i]%></td>
+					<td><%=name[i]%></td>
+				</tr>
+			</tbody>
+			<%
+				}
+			%>
+		</table>
+	</div>
+	<!--  Optional JavaScript -->
+	<!--  JQuery first, then Popper.js, then Bootstrap JS -->
+	<Script type="text/javascript" src="/js/jquery-3.4.1.js"></Script>
+	<Script type="text/javascript" src="/js/bootstrap.min.js"></Script>
+	<Script type="text/javascript" src="/js/popper.min.js"></Script>
+</body>
+</html>
+
+===========================================================================
+search.jsp
+------------
+<%@ page language="java" contentType="text/html; charset = UTF-8"
+	pageEncoding="UTF-8"%>
+<!doctype html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>Search Result</title>
+</head>
+<body>
+	Your search word : <%= request.getParameter("keyword") %>
+</body>
+</html>
