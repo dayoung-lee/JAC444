@@ -1,0 +1,45 @@
+#BeanTest.java
+package jsp.member.model;
+
+public class BeanTest {
+	private String name = null;
+	private int age = 0;
+	public String getName() {
+		return name;
+	}
+	public void setName(String name) {
+		this.name = name;
+	}
+	public int getAge() {
+		return age;
+	}
+	public void setAge(int age) {
+		this.age = age;
+	}
+	
+}
+
+
+#BeanTest.jsp
+<%@ page language="java" contentType="text/html; charset = UTF-8" pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv = "Content-Type" content="text/html"; charset =UTF-8">
+	<title>BeanTest</title>
+</head>
+
+<body>
+	<!-- Declare JavaBean -->
+	<jsp:useBean id = "beanTest" class = "jsp.member.model.BeanTest" scope="page"/>
+	<!-- set name (Dayoung Lee) -->
+	<jsp:setProperty name = "beanTest" property = "name" value = "Dayoung Lee"/>
+	<!-- print name -->
+	<jsp:getProperty name = "beanTest" property ="name"/>
+	
+	<!-- set age (27) -->
+	<jsp:setProperty name = "beanTest" property = "age" value = "26"/>
+	<!-- print age -->
+	<jsp:getProperty name = "beanTest" property ="age"/>
+</body>
+</html>
