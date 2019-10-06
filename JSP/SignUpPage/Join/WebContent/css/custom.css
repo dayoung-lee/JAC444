@@ -1,0 +1,37 @@
+body{
+	border: 1px solid black;
+	width : 600px;
+	margin-left:auto;
+	margin-right:auto;
+	
+}
+#wrap{
+	
+	text-align:center;
+}
+
+table{
+	width : 500px;
+	margin-left:auto;
+	margin-right:auto;
+	border:3px solid #05b198;
+	text-align: left;
+}
+td{
+	border:1px solid #05b198;
+	padding-left: 10px;		
+}
+table td#title{
+	text-align:left;
+	padding-left : 15px;
+}
+
+#title{
+	background-color:#05b198;
+}
+
+input[type="text"]::placeholder{
+	text-align: right;
+	padding-right: 5px;
+}
+
